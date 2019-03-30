@@ -25,7 +25,7 @@ function objToSql(ob) {
   return arr.toString();
 }
 
-// Object for all our SQL statement functions.
+// Object for SQL statement functions.
 var orm = {
   selectAll: function(tableInput, cb) {
     connection.query("SELECT * FROM ??;", [tableInput], function(err, result) {
